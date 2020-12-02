@@ -1,164 +1,333 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sunk1t</title><meta name="author" content="Sunk1t"><meta name="copyright" content="Sunk1t"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Kotlin Lover">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Sunk1t</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Kotlin Lover">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sunk1t">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Sunk1t">
 <meta property="og:description" content="Kotlin Lover">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/null">
 <meta property="article:author" content="Sunk1t">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  ClickShowText: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isanchor: false
-};
+  
+    <link rel="alternate" href="/atom.xml" title="Sunk1t" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-    const now = new Date()
-    const expiryDay = ttl * 86400000
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay,
-    }
-    localStorage.setItem(key, JSON.stringify(item))
-  },
+<meta name="generator" content="Hexo 5.1.1"></head>
 
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sunk1t</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-media-concept" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/02/media-concept/" class="article-date">
+  <time datetime="2020-12-02T13:06:19.000Z" itemprop="datePublished">2020-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/02/media-concept/">音视频开发的一些基本概念</a>
+    </h1>
+  
 
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
-
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2020-11-20 15:06:05'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(function () {  window.activateDarkMode = function () {
-    document.documentElement.setAttribute('data-theme', 'dark')
-    if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-    }
-  }
-  window.activateLightMode = function () {
-    document.documentElement.setAttribute('data-theme', 'light')
-   if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-    }
-  }
-  const autoChangeMode = 'false'
-  const t = saveToLocal.get('theme')
-  if (autoChangeMode === '1') {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-    if (t === undefined) {
-      if (isLightMode) activateLightMode()
-      else if (isDarkMode) activateDarkMode()
-      else if (isNotSpecified || hasNoSupport) {
-        const now = new Date()
-        const hour = now.getHours()
-        const isNight = hour <= 6 || hour >= 18
-        isNight ? activateDarkMode() : activateLightMode()
-      }
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-        if (saveToLocal.get('theme') === undefined) {
-          e.matches ? activateDarkMode() : activateLightMode()
-        }
-      })
-    } else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else if (autoChangeMode === '2') {
-    const now = new Date()
-    const hour = now.getHours()
-    const isNight = hour <= 6 || hour >= 18
-    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-    else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else {
-    if (t === 'dark') activateDarkMode()
-    else if (t === 'light') activateLightMode()
-  }const asideStatus = saveToLocal.get('aside-status')
-if (asideStatus !== undefined) {
-   if (asideStatus === 'hide') {
-     document.documentElement.classList.add('hide-aside')
-   } else {
-     document.documentElement.classList.remove('hide-aside')
-   }
-}})()</script><meta name="generator" content="Hexo 5.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://s3.ax1x.com/2020/11/20/DMOs1A.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sunk1t</a></span><span id="menus"><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Sunk1t</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/19/write-a-player-1/" title="Android 播放器实现：基本思路和 ExoPlayer 分析">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Android 播放器实现：基本思路和 ExoPlayer 分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/19/write-a-player-1/" title="Android 播放器实现：基本思路和 ExoPlayer 分析">Android 播放器实现：基本思路和 ExoPlayer 分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-19T03:41:02.000Z" title="发表于 2020-11-19 11:41:02">2020-11-19</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/09/14/add-an-subtitle/" title="在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕">在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-14T05:38:19.000Z" title="发表于 2020-09-14 13:38:19">2020-09-14</time></span></div><div class="content">梳理了一下表情锅的技术方案，利用 ffmpeg 给 gif 图片添加字幕。
-主要问题在于把 ffmpeg 集成到 android 项目中，以及理解怎么利用 ass 文件添加字幕，设计和它的作用方式匹配的架构。
-正文
-</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/09/08/complie-principles/" title="编译原理记录（一）">编译原理记录（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-08T01:04:10.000Z" title="发表于 2020-09-08 09:04:10">2020-09-08</time></span></div><div class="content">这个系列的博客主要记录一下最近学习编译原理的过程中产生的一些体会，会夹带我自己总结的虎书的一些课后题答案和知识总结。
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="采样"><a href="#采样" class="headerlink" title="采样"></a>采样</h4><p>把模拟信号数字化的过程，信号在坐标系内是一条曲线，采样得到的量化数值是曲线上的点。</p>
+<p>采样率越高，点的间隔就越小，一段信号内得到的数据量就越大，音视频质量就越高。</p>
+<p>有一个东西叫奈奎斯特理论，采样频率不低于音频信号最高频率的两倍，就可以无损还原原始声音。</p>
+<h4 id="奈奎斯特理论"><a href="#奈奎斯特理论" class="headerlink" title="奈奎斯特理论"></a>奈奎斯特理论</h4><h4 id="编码，解码，以及其格式"><a href="#编码，解码，以及其格式" class="headerlink" title="编码，解码，以及其格式"></a>编码，解码，以及其格式</h4><h4 id="帧，IBP帧"><a href="#帧，IBP帧" class="headerlink" title="帧，IBP帧"></a>帧，IBP帧</h4><h4 id="封装格式"><a href="#封装格式" class="headerlink" title="封装格式"></a>封装格式</h4><h4 id="帧数，分辨率，码率"><a href="#帧数，分辨率，码率" class="headerlink" title="帧数，分辨率，码率"></a>帧数，分辨率，码率</h4><h4 id="软解，硬解"><a href="#软解，硬解" class="headerlink" title="软解，硬解"></a>软解，硬解</h4><h4 id="PTS，BTS"><a href="#PTS，BTS" class="headerlink" title="PTS，BTS"></a>PTS，BTS</h4><h4 id="TRACK-轨道"><a href="#TRACK-轨道" class="headerlink" title="TRACK 轨道"></a>TRACK 轨道</h4><h4 id="FFmpeg"><a href="#FFmpeg" class="headerlink" title="FFmpeg"></a>FFmpeg</h4><h4 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h4><h4 id="Render-绘制"><a href="#Render-绘制" class="headerlink" title="Render 绘制"></a>Render 绘制</h4><h4 id="拓展内容"><a href="#拓展内容" class="headerlink" title="拓展内容"></a>拓展内容</h4><h4 id="播放器基本架构"><a href="#播放器基本架构" class="headerlink" title="播放器基本架构"></a>播放器基本架构</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/02/media-concept/" data-id="cki7firaf0000ghsd1yug5u7j" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
-词法分析概括来说这个阶段的任务就是：接收一个字符串，判断这个字符串符不符合语言的词法规则，生成一系列“单词符号”（token），给下一阶段的语法分析使用。
-负责执行这个阶段的任务的程序叫做词法分析器
-其中有几点要素：
+  
+    <article id="post-write-a-player-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/19/write-a-player-1/" class="article-date">
+  <time datetime="2020-11-19T03:41:02.000Z" itemprop="datePublished">2020-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/19/write-a-player-1/">Android 播放器实现：音视频基础</a>
+    </h1>
+  
 
-词法分析器的输入是字符串
-语言的词法规则由正则表达式定义
-词法分析器的生成是一个token序列，其中可能包含一些语义信息
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>开坑，先了解基本概念</p>
 
-正则表达式有五个基本操作符：符号，可选，联结，空串，克林闭包
-还可以有一些其他的规则，不过都没有扩充正则表达式的能力，都可以用基本操作符完成。
-两个消除二义性的原则：最长匹配，规则优先（代表正则表达式的书写顺序有意义）
-有限自动机 DFA正则表达式规定了词法规则，有限自动机可以看作将字符串和正则表达式进行匹配的算法。
-状态和表示状态之间转移的、边上标记有一个符号，初态，终态
-非确定有限自动机 NFA和 DFA 的区别：确定的自动机，从一个状态出发的两条边的符号一定不同，并且也没有标记为空的边。但是 NFA 可以有。
-p是一个指针 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Sunk1t</div><div class="author-info__description">Kotlin Lover</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/19/write-a-player-1/" title="Android 播放器实现：基本思路和 ExoPlayer 分析"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Android 播放器实现：基本思路和 ExoPlayer 分析"/></a><div class="content"><a class="title" href="/2020/11/19/write-a-player-1/" title="Android 播放器实现：基本思路和 ExoPlayer 分析">Android 播放器实现：基本思路和 ExoPlayer 分析</a><time datetime="2020-11-19T03:41:02.000Z" title="发表于 2020-11-19 11:41:02">2020-11-19</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2020/09/14/add-an-subtitle/" title="在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕">在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕</a><time datetime="2020-09-14T05:38:19.000Z" title="发表于 2020-09-14 13:38:19">2020-09-14</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2020/09/08/complie-principles/" title="编译原理记录（一）">编译原理记录（一）</a><time datetime="2020-09-08T01:04:10.000Z" title="发表于 2020-09-08 09:04:10">2020-09-08</time></div></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" style="font-size: 1.1em; color: #999">编译原理</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">2</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-20T07:06:05.775Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Sunk1t</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/19/write-a-player-1/" data-id="ckhprf6nk0000kvsd397megjb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-add-an-subtitle" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/14/add-an-subtitle/" class="article-date">
+  <time datetime="2020-09-14T05:38:19.000Z" itemprop="datePublished">2020-09-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/14/add-an-subtitle/">在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>梳理了一下表情锅的技术方案，利用 ffmpeg 给 gif 图片添加字幕。</p>
+<p>主要问题在于把 ffmpeg 集成到 android 项目中，以及理解怎么利用 ass 文件添加字幕，设计和它的作用方式匹配的架构。</p>
+<p><a target="_blank" rel="noopener" href="https://xd8wvqmm7w.feishu.cn/docs/doccnbqmbLM2CeVBHF52FkPc5Gh">正文</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/09/14/add-an-subtitle/" data-id="ckf23q8t90000mdbnhcmr0ubd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-complie-principles" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/08/complie-principles/" class="article-date">
+  <time datetime="2020-09-08T01:04:10.000Z" itemprop="datePublished">2020-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/08/complie-principles/">编译原理记录（一）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这个系列的博客主要记录一下最近学习编译原理的过程中产生的一些体会，会夹带我自己总结的<strong>虎书</strong>的一些课后题答案和知识总结。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/09/08/complie-principles/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/09/08/complie-principles/" data-id="cketa6qg90001nd3sej1o5ami" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" rel="tag">编译原理</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" rel="tag">编译原理</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" style="font-size: 10px;">编译原理</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/12/02/media-concept/">音视频开发的一些基本概念</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/19/write-a-player-1/">Android 播放器实现：音视频基础</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/14/add-an-subtitle/">在 Android 平台上利用 FFmpeg 给 Gif 图片加字幕</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/08/complie-principles/">编译原理记录（一）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Sunk1t<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

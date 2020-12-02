@@ -5,17 +5,17 @@
   
 
   
-  <title>categories | Sunk1t</title>
+  <title>音视频开发的一些基本概念 | Sunk1t</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Kotlin Lover">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://example.com/categories/index.html">
+  <meta name="description" content="采样把模拟信号数字化的过程，信号在坐标系内是一条曲线，采样得到的量化数值是曲线上的点。 采样率越高，点的间隔就越小，一段信号内得到的数据量就越大，音视频质量就越高。 有一个东西叫奈奎斯特理论，采样频率不低于音频信号最高频率的两倍，就可以无损还原原始声音。 奈奎斯特理论编码，解码，以及其格式帧，IBP帧封装格式帧数，分辨率，码率软解，硬解PTS，BTSTRACK 轨道FFmpeg图像处理Render">
+<meta property="og:type" content="article">
+<meta property="og:title" content="音视频开发的一些基本概念">
+<meta property="og:url" content="http://example.com/2020/12/02/media-concept/index.html">
 <meta property="og:site_name" content="Sunk1t">
-<meta property="og:description" content="Kotlin Lover">
+<meta property="og:description" content="采样把模拟信号数字化的过程，信号在坐标系内是一条曲线，采样得到的量化数值是曲线上的点。 采样率越高，点的间隔就越小，一段信号内得到的数据量就越大，音视频质量就越高。 有一个东西叫奈奎斯特理论，采样频率不低于音频信号最高频率的两倍，就可以无损还原原始声音。 奈奎斯特理论编码，解码，以及其格式帧，IBP帧封装格式帧数，分辨率，码率软解，硬解PTS，BTSTRACK 轨道FFmpeg图像处理Render">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-08T01:30:56.000Z">
-<meta property="article:modified_time" content="2020-09-08T01:30:56.512Z">
+<meta property="article:published_time" content="2020-12-02T13:06:19.000Z">
+<meta property="article:modified_time" content="2020-12-02T13:11:25.690Z">
 <meta property="article:author" content="Sunk1t">
 <meta name="twitter:card" content="summary">
   
@@ -66,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-media-concept" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/categories/index.html" class="article-date">
-  <time datetime="2020-09-08T01:30:56.000Z" itemprop="datePublished">2020-09-08</time>
+    <a href="/2020/12/02/media-concept/" class="article-date">
+  <time datetime="2020-12-02T13:06:19.000Z" itemprop="datePublished">2020-12-02</time>
 </a>
     
   </div>
@@ -80,7 +80,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      categories
+      音视频开发的一些基本概念
     </h1>
   
 
@@ -88,17 +88,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="采样"><a href="#采样" class="headerlink" title="采样"></a>采样</h4><p>把模拟信号数字化的过程，信号在坐标系内是一条曲线，采样得到的量化数值是曲线上的点。</p>
+<p>采样率越高，点的间隔就越小，一段信号内得到的数据量就越大，音视频质量就越高。</p>
+<p>有一个东西叫奈奎斯特理论，采样频率不低于音频信号最高频率的两倍，就可以无损还原原始声音。</p>
+<h4 id="奈奎斯特理论"><a href="#奈奎斯特理论" class="headerlink" title="奈奎斯特理论"></a>奈奎斯特理论</h4><h4 id="编码，解码，以及其格式"><a href="#编码，解码，以及其格式" class="headerlink" title="编码，解码，以及其格式"></a>编码，解码，以及其格式</h4><h4 id="帧，IBP帧"><a href="#帧，IBP帧" class="headerlink" title="帧，IBP帧"></a>帧，IBP帧</h4><h4 id="封装格式"><a href="#封装格式" class="headerlink" title="封装格式"></a>封装格式</h4><h4 id="帧数，分辨率，码率"><a href="#帧数，分辨率，码率" class="headerlink" title="帧数，分辨率，码率"></a>帧数，分辨率，码率</h4><h4 id="软解，硬解"><a href="#软解，硬解" class="headerlink" title="软解，硬解"></a>软解，硬解</h4><h4 id="PTS，BTS"><a href="#PTS，BTS" class="headerlink" title="PTS，BTS"></a>PTS，BTS</h4><h4 id="TRACK-轨道"><a href="#TRACK-轨道" class="headerlink" title="TRACK 轨道"></a>TRACK 轨道</h4><h4 id="FFmpeg"><a href="#FFmpeg" class="headerlink" title="FFmpeg"></a>FFmpeg</h4><h4 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h4><h4 id="Render-绘制"><a href="#Render-绘制" class="headerlink" title="Render 绘制"></a>Render 绘制</h4><h4 id="拓展内容"><a href="#拓展内容" class="headerlink" title="拓展内容"></a>拓展内容</h4><h4 id="播放器基本架构"><a href="#播放器基本架构" class="headerlink" title="播放器基本架构"></a>播放器基本架构</h4>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/categories/index.html" data-id="cketa6qgf0005nd3s1cof0jui" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/02/media-concept/" data-id="cki7firaf0000ghsd1yug5u7j" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/19/write-a-player-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Android 播放器实现：音视频基础</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
