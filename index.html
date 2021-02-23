@@ -1,154 +1,691 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sunk1t</title><meta name="author" content="Sunk1t"><meta name="copyright" content="Sunk1t"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Kotlin Lover">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Love it if we made if">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Sunk1t">
+<meta property="og:title" content="Ski&#39;s Blog">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Sunk1t">
-<meta property="og:description" content="Kotlin Lover">
+<meta property="og:site_name" content="Ski&#39;s Blog">
+<meta property="og:description" content="Love it if we made if">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/null">
-<meta property="article:author" content="Sunk1t">
+<meta property="article:author" content="ski">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  ClickShowText: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isanchor: false
-};
 
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-    const now = new Date()
-    const expiryDay = ttl * 86400000
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay,
-    }
-    localStorage.setItem(key, JSON.stringify(item))
-  },
+<link rel="canonical" href="http://example.com/">
 
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
 
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
 
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2021-02-12 22:53:48'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
+  <title>Ski's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
   }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(function () {  window.activateDarkMode = function () {
-    document.documentElement.setAttribute('data-theme', 'dark')
-    if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Ski's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/12/what-does-people-like/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/12/what-does-people-like/" class="post-title-link" itemprop="url">用户在为什么花钱</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-02-12 22:29:47 / 修改时间：23:03:40" itemprop="dateCreated datePublished" datetime="2021-02-12T22:29:47+08:00">2021-02-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>全程看完了春晚，看的过程中有和其他家人朋友聊看法，看完之后也在网上看了非常多的评价，绝大多数是差评。我有印象的好评可以说全部都是在对某一明星表示喜爱。印象里前几年评价情况也基本一致。</p>
+<p>之前和一些同学聊过我在“微博为什么这么臭还会赚钱”上感受到的不合理，总结出的原因是“我在生活中和在网络上能接触到的人群完全不一致”。然而春晚这个问题上，我在生活中和网络上接触到的朋友的看法都一致了：几乎全是差评。近几年的情况也基本一致。但为什么在这种情况下，春晚仍然能全程维持一个非常高的收视率，赞助权仍然无比抢手，赞助商公布的数据还是非常漂亮。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/08/about-epidemic-prevention/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/08/about-epidemic-prevention/" class="post-title-link" itemprop="url">一些关于偏远地区基层行政人员防疫态度的看法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-02-08 10:58:58 / 修改时间：10:59:42" itemprop="dateCreated datePublished" datetime="2021-02-08T10:58:58+08:00">2021-02-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我到家的时候，这边的防疫政策是隔离7天1次核酸，后来变成了隔离14天2次核酸，再后来变成了21天，再后来又变成了28天。<br>从1月11号到家到现在，在几乎没出过几天门，回家途中也没有在任何风险区域有逗留的情况下，我的健康码反反复复的从黄变绿再变黄再变绿又变黄。更可笑的是，当我第14天第二次去做核酸检测的时候，检测点的工作人员亲口讲：“你早就解除隔离了呀”，而我一眼都没见过的社区管理人员还称：“没有解除隔离”。<br>我无法理解这种混乱的行政的存在原因，我也无法理解我在出租车上，超市里或者马路上听到的别人聊天时口中对防疫政策的“咱都理解一下”。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/31/flutter-md/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/31/flutter-md/" class="post-title-link" itemprop="url">flutter_markdown repo 解析流程分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-31 18:30:31" itemprop="dateCreated datePublished" datetime="2021-01-31T18:30:31+08:00">2021-01-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-23 13:13:11" itemprop="dateModified" datetime="2021-02-23T13:13:11+08:00">2021-02-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="flutter-markdown-repo-解析流程分析"><a href="#flutter-markdown-repo-解析流程分析" class="headerlink" title="flutter_markdown repo 解析流程分析"></a>flutter_markdown repo 解析流程分析</h3><p><em>参考：</em><a target="_blank" rel="noopener" href="https://88250.b3log.org/articles/2020/04/23/1587637426085.html">https://88250.b3log.org/articles/2020/04/23/1587637426085.html</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/31/flutter-md/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/29/ffplay/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/29/ffplay/" class="post-title-link" itemprop="url">FFplay 源码分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-29 23:52:16" itemprop="dateCreated datePublished" datetime="2021-01-29T23:52:16+08:00">2021-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-23 13:14:35" itemprop="dateModified" datetime="2021-02-23T13:14:35+08:00">2021-02-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/18/async/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/18/async/" class="post-title-link" itemprop="url">Async Call on Client</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-18 17:26:18" itemprop="dateCreated datePublished" datetime="2020-12-18T17:26:18+08:00">2020-12-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-23 13:14:24" itemprop="dateModified" datetime="2021-02-23T13:14:24+08:00">2021-02-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/17/dart-const/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ski">
+      <meta itemprop="description" content="Love it if we made if">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ski's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/17/dart-const/" class="post-title-link" itemprop="url">Const in Dart</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-17 11:33:15 / 修改时间：21:13:21" itemprop="dateCreated datePublished" datetime="2020-12-17T11:33:15+08:00">2020-12-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Dart 中的 const 是本质上就是在为开发者提供<strong>“规定谁可以作为编译期常量”</strong>的能力，在开发中主要是起一个优化性能的作用。</p>
+<p>从用法上看，const 可以用在 top-level，local varible，static field 以及 constructor 上，前三者很好理解，比如说使用一个 <code>const i = 10</code> ，那么在编译的时候，编译器就会把这个 i 处理为一个常量。其他语言中也有类似的支持。</p>
+<p>dart 的 const 最精髓的地方在最后那个 const constructor。我也是从这里揣测了一下 dart 的 const 的设计者的想法。</p>
+<p>constructor 是用来创造常规对象的。常规意义上的“对象”可能和“常量”不太像是能放在一起聊的东西，比如 Java 中的 static 常量会放在方法区，虽然可以狡辩：“static 常量是 class 对象的 field，class 也是对象”，但是它和平时聊的用 constructor 创建的对象显然已经不是一回事儿了。用一个 const constructor 创造对象，其实是在编译期对对象创建进行了优化，const constructor 创建的对象会在内存里留一份底子，如果程序在不同的时间或者空间上也创建了同样的对象，那么就可以从那个地方直接拿一个过来，避免了重复创建对象的问题。</p>
+<p>其实这样来看，const constructor 的优化性能思路，和 Java 中对 String 相关的优化思路基本一致。</p>
+<p>结合这个，也比较好理解 const constructor 为什么要求变量都是 final，以及 flutter sdk 中的一些类为什么搞的是 const constructor。</p>
+<p>这里并没有调研 const constructor 的具体实现，它是做了一次深拷贝还是用的是完全一样的一份对象，这个还不得而知，后续可以调研一下，这个对 const constructor 的理解也有帮助。</p>
+<p>程序员在使用 const 的时候，最直观的目的就是为了做运行时性能优化。软件开发中和运行时性能矛盾比较明显的，一个是编码难度，一个是编译时间。再看一下前面那句 dart 的 const 相当于给了程序员“规定谁是编译时常量”的能力，可以猜出 dart 编译器放弃了一部分完全由编译后端负责的主动优化工作，交给程序员来进行定制，结合编译前端进行优化，这对编译性能可能有一些的提升。以笔者目前水平看， const 的设计就是通过一定程度上提高了程序员的编码难度，来换取编译效率和运行效率的提高。</p>
+<p>实际上在软件工程中，会有一些人力会专门安排去做编译优化，性能优化相关的工作，他们主要是从其他方面着手，而 const 也相当于为这部分工作提供了另一种思路。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
     }
-  }
-  window.activateLightMode = function () {
-    document.documentElement.setAttribute('data-theme', 'light')
-   if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-    }
-  }
-  const autoChangeMode = 'false'
-  const t = saveToLocal.get('theme')
-  if (autoChangeMode === '1') {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-    if (t === undefined) {
-      if (isLightMode) activateLightMode()
-      else if (isDarkMode) activateDarkMode()
-      else if (isNotSpecified || hasNoSupport) {
-        const now = new Date()
-        const hour = now.getHours()
-        const isNight = hour <= 6 || hour >= 18
-        isNight ? activateDarkMode() : activateLightMode()
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
       }
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-        if (saveToLocal.get('theme') === undefined) {
-          e.matches ? activateDarkMode() : activateLightMode()
-        }
-      })
-    } else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else if (autoChangeMode === '2') {
-    const now = new Date()
-    const hour = now.getHours()
-    const isNight = hour <= 6 || hour >= 18
-    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-    else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else {
-    if (t === 'dark') activateDarkMode()
-    else if (t === 'light') activateLightMode()
-  }const asideStatus = saveToLocal.get('aside-status')
-if (asideStatus !== undefined) {
-   if (asideStatus === 'hide') {
-     document.documentElement.classList.add('hide-aside')
-   } else {
-     document.documentElement.classList.remove('hide-aside')
-   }
-}})()</script><meta name="generator" content="Hexo 5.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://s3.ax1x.com/2020/11/20/DMOs1A.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sunk1t</a></span><span id="menus"><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Sunk1t</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/02/12/what-does-people-like/" title="用户在为什么花钱">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用户在为什么花钱"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/02/12/what-does-people-like/" title="用户在为什么花钱">用户在为什么花钱</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-02-12T14:29:47.000Z" title="发表于 2021-02-12 22:29:47">2021-02-12</time></span></div><div class="content">全程看完了春晚，看的过程中有和其他家人朋友聊看法，看完之后也在网上看了非常多的评价，绝大多数是差评。我有印象的好评可以说全部都是在对某一明星表示喜爱。印象里前几年评价情况也基本一致。在这种情况下，春晚仍然能全程维持一个非常高的收视率，赞助商方公布的互动数据也是非常漂亮。
-为什么在得到的差评比例如此之大的情况下，春晚还能维持这么高的商业价值，我不太明白观众到底在为什么买单。
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/02/08/about-epidemic-prevention/" title="一些关于偏远地区基层行政人员防疫态度的看法">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一些关于偏远地区基层行政人员防疫态度的看法"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/02/08/about-epidemic-prevention/" title="一些关于偏远地区基层行政人员防疫态度的看法">一些关于偏远地区基层行政人员防疫态度的看法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-02-08T02:58:58.000Z" title="发表于 2021-02-08 10:58:58">2021-02-08</time></span></div><div class="content">我到家的时候，这边的防疫政策是隔离7天1次核酸，后来变成了隔离14天2次核酸，再后来变成了21天，再后来又变成了28天。从1月11号到家到现在，在几乎没出过几天门，回家途中也没有在任何风险区域有逗留的情况下，我的健康码反反复复的从黄变绿再变黄再变绿又变黄。更可笑的是，当我第14天第二次去做核酸检测的时候，检测点的工作人员亲口讲：“你早就解除隔离了呀”，而我一眼都没见过的社区管理人员还称：“没有解除隔离”。我无法理解这种混乱的行政的存在原因，我也无法理解我在出租车上，超市里或者马路上听到的别人聊天时口中对防疫政策的“咱都理解一下”。
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/31/flutter-md/" title="flutter-md">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="flutter-md"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/31/flutter-md/" title="flutter-md">flutter-md</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-31T10:30:31.000Z" title="发表于 2021-01-31 18:30:31">2021-01-31</time></span></div><div class="content">flutter_markdown repo 解析流程分析参考：https://88250.b3log.org/articles/2020/04/23/1587637426085.html
-这个库中使用 Markdown Widget 可以直接解析并渲染 Markdown，这个 Widget 的 build 方法如下
-12345678910@override  Widget build(BuildContext context, List&lt;Widget&gt; children) &#123;    return ListView(      padding: padding,      controller: controller,      physics: physics,      shrinkWrap: shrinkWrap,      children: children,    );  &#125;
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
-它给上层的就是一个 ListView，可以理解成就是按行渲染 Markdown，和我们理解的 Markdown 渲染方式一致，children 就是每一行，这里可以想到 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/29/ffplay/" title="ffplay 源码分析">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ffplay 源码分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/29/ffplay/" title="ffplay 源码分析">ffplay 源码分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-29T15:52:16.000Z" title="发表于 2021-01-29 23:52:16">2021-01-29</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/12/18/async/" title="async">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="async"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/18/async/" title="async">async</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-18T09:26:18.000Z" title="发表于 2020-12-18 17:26:18">2020-12-18</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/12/17/dart-const/" title="Const in Dart">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Const in Dart"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/17/dart-const/" title="Const in Dart">Const in Dart</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-17T03:33:15.000Z" title="发表于 2020-12-17 11:33:15">2020-12-17</time></span></div><div class="content">Dart 中的 const 是本质上就是在为开发者提供“规定谁可以作为编译期常量”的能力，在开发中主要是起一个优化性能的作用。
-从用法上看，const 可以用在 top-level，local varible，static field 以及 constructor 上，前三者很好理解，比如说使用一个 const i = 10 ，那么在编译的时候，编译器就会把这个 i 处理为一个常量。其他语言中也有类似的支持。
-dart 的 const 最精髓的地方在最后那个 const constructor。我也是从这里揣测了一下 dart 的 const 的设计者的想法。
-constructor 是用来创造常规对象的。常规意义上的“对象”可能和“常量”不太像是能放在一起聊的东西，比如 Java 中的 static 常量会放在方法区，虽然可以狡辩：“static 常量是 class 对象的 field，class 也是对象”，但是它和平时聊的用 constructor 创建的对象显然已经不是一回事儿了。用一个 const constructor 创造对象，其实是在编译期对对象创建进行了优化，cons ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Sunk1t</div><div class="author-info__description">Kotlin Lover</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/02/12/what-does-people-like/" title="用户在为什么花钱"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用户在为什么花钱"/></a><div class="content"><a class="title" href="/2021/02/12/what-does-people-like/" title="用户在为什么花钱">用户在为什么花钱</a><time datetime="2021-02-12T14:29:47.000Z" title="发表于 2021-02-12 22:29:47">2021-02-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/08/about-epidemic-prevention/" title="一些关于偏远地区基层行政人员防疫态度的看法"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一些关于偏远地区基层行政人员防疫态度的看法"/></a><div class="content"><a class="title" href="/2021/02/08/about-epidemic-prevention/" title="一些关于偏远地区基层行政人员防疫态度的看法">一些关于偏远地区基层行政人员防疫态度的看法</a><time datetime="2021-02-08T02:58:58.000Z" title="发表于 2021-02-08 10:58:58">2021-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/31/flutter-md/" title="flutter-md"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="flutter-md"/></a><div class="content"><a class="title" href="/2021/01/31/flutter-md/" title="flutter-md">flutter-md</a><time datetime="2021-01-31T10:30:31.000Z" title="发表于 2021-01-31 18:30:31">2021-01-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/29/ffplay/" title="ffplay 源码分析"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ffplay 源码分析"/></a><div class="content"><a class="title" href="/2021/01/29/ffplay/" title="ffplay 源码分析">ffplay 源码分析</a><time datetime="2021-01-29T15:52:16.000Z" title="发表于 2021-01-29 23:52:16">2021-01-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/18/async/" title="async"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="async"/></a><div class="content"><a class="title" href="/2020/12/18/async/" title="async">async</a><time datetime="2020-12-18T09:26:18.000Z" title="发表于 2020-12-18 17:26:18">2020-12-18</time></div></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/dart-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B-%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" style="font-size: 1.1em; color: #999">dart 软件工程 编译原理</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">二月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">2</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-02-12T14:53:48.713Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Sunk1t</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ski</p>
+  <div class="site-description" itemprop="description">Love it if we made if</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ski</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
